@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Informacje</title>
+    <meta name="description" content="Formularz Osoby">
+    <meta name="author" content="Konrad Loch">
+
+    <link rel="stylesheet" href="css/info_page.css">
+    <link rel="stylesheet" href="css/person_form.css">
+
+</head>
+
+<body>
+    <header>...</header>
+    <main>
+        <aside></aside>
+        <article>
+            <h1 id="head">Formularz kontaktowy</h1>
+            <section>
+                <h4>Wprowadź dane</h4>
+                <div class="container">
+                    <form autocomplete="on">
+                        <label for="imie">Imię</label>
+                        <input id="imie" name="imie" type="text" autofocus>
+
+                        <label for="nazwisko">Nazwisko</label>
+                        <input id="nazwisko" name="nazwisko" type="text" required>
+                        <p>Pole wymagane.</p>
+                        <label for="miesiac">Miesiąc urodzin</label>
+                        <input id="miesiac" list="miesiace" name="miesiac">
+                        <datalist id="miesiace">
+                            <option value="Styczeń">
+                                <option value="Luty">
+                                    <option value="Marzec">
+                                        <option value="Kwiecień">
+                                            <option value="Maj">
+                                                <option value="Czerwiec">
+                                                    <option value="Lipiec">
+                                                        <option value="Sierpień">
+                                                            <option value="Wrzesień">
+                                                                <option value="Październik">
+                                                                    <option value="Listopad">
+                                                                        <option value="Grudzień">
+
+                        </datalist>
+
+                        <label for="email">E-Mail</label>
+                        <input id="email" name="email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                        <p>Pole wymagane. Wymagana odpowiednia forma adresu</p>
+
+                        <label for="telefon">Telefon</label>
+                        <input id="telefon" name="telefon" type="text">
+
+                        <button type="submit" class="btn">Wyśli</button>
+                    </form>
+                </div>
+            </section>
+
+        </article>
+        <aside>
+            <button class="toTrans" id="fixedbutton">Kontakt</button>
+        </aside>
+    </main>
+    <footer>
+        <div class="tab center">
+            <div>
+                &copy; Konrad Loch
+            </div>
+            <div>
+                &copy; Jarosław Skowron
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
